@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="clock">
+        <div class="time-box" id="hours">00</div>
+        <div class="colon">:</div>
+        <div class="time-box" id="minutes">00</div>
+        <div class="colon">:</div>
+        <div class="time-box" id="seconds">00</div>
+    </div>
+
+<link rel="stylesheet" href="{% static 'clock_app/css/clock.css' %}">
+<script type="text/javascript" src="{% static 'clock_app/js/clock.js' %}"></script>
+{% endblock  %}
